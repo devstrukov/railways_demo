@@ -1,0 +1,40 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page,
+  .print-content {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
+  }
+
+  .report-table thead {
+    display: table-header-group;
+  }
+
+  .report-table tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  .report-block {
+    border: 1px solid #000 !important;
+  }
+}
